@@ -1,0 +1,435 @@
+
+/* GENERAL STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #FBF8CC;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* NAVBAR */
+.nav {
+    width: 100%;
+    padding: 25px 0;
+    color: hsl(266, 83%, 14%);
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: hsl(266, 83%, 14%);
+}
+
+.nav-bar a:hover {
+    color: hsl(59, 86%, 49%);
+    transition: 0.3s ease-in-out;
+}
+
+.nav-links,
+.social-icons {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links li,
+.social-icons li {
+    cursor: pointer;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    min-height: 450px;
+    width: 100%;
+}
+
+.hero-title {
+    flex: 1;
+    font-size: 36px;
+    text-align: left;
+    color: hsl(266, 83%, 14%);
+    padding: 20px 0;
+    margin: 0;
+}
+
+.hero-title h1 {
+    font-size: 65px;
+    margin: 15px 0;
+}
+
+/* RESUME BUTTON */
+.button {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 20px;
+    background-color: hsl(61, 88%, 50%);
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    color: hsl(266, 83%, 14%);
+    border-radius: 5px;
+    border: 1px solid hsl(266, 83%, 14%);
+    cursor: pointer;
+}
+
+/* HOME PROFILE IMAGE */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* ABOUT PAGE */
+.about-page {
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px 0;
+    text-align: left;
+    color: hsl(266, 83%, 14%);
+}
+
+.about-page h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: hsl(59, 86%, 49%);
+}
+
+/* ABOUT IMAGE AND TEXT CONTAINER */
+.about-image {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 35px;
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px 0;
+}
+
+/* ABOUT PROFILE IMAGE */
+.about-photo {
+    flex: 0 0 35%;
+    max-width: 350px;
+}
+
+.about-photo img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* ABOUT TEXT */
+.about-text {
+    flex: 1;
+    min-width: 0;
+    text-align: left;
+    color: hsl(266, 83%, 14%);
+    padding: 0;
+    margin: 0;
+}
+
+/* TIMELINE */
+.timeline-item {
+    margin-bottom: 25px;
+}
+
+.about-textH {
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: hsl(266, 83%, 14%);
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: hsl(266, 83%, 14%);
+}
+
+/* RESPONSIVE DESIGN - TABLETS AND MOBILE */
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .nav-bar {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .nav-links,
+    .social-icons {
+        gap: 15px;
+    }
+
+    /* HOME PAGE */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .hero-title {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .hero-title h1 {
+        font-size: 48px;
+    }
+
+    .hero-image {
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: 260px;
+        height: 260px;
+    }
+
+    /* ABOUT PAGE */
+    .about-page {
+        padding: 5px 0;
+    }
+
+    .about-image {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .about-photo {
+        flex: none;
+        width: 100%;
+    }
+
+    .about-photo img {
+        width: 260px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-textH {
+        font-size: 21px;
+    }
+
+    .about-text p {
+        font-size: 15px;
+    }
+}
+
+/* --- For contact page --- */
+
+
+.contact-page {
+    width: 100%;
+    padding: 30px 0;
+    color: hsl(266, 83%, 14%);
+}
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.contact-heading h1 {
+    font-size: 42px;
+    color: hsl(59, 86%, 49%);
+    margin-bottom: 15px;
+}
+
+.contact-heading p {
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.contact-detail i {
+    color: hsl(59, 86%, 49%);
+    font-size: 21px;
+}
+
+.contact-detail a {
+    color: hsl(266, 83%, 14%);
+    text-decoration: none;
+}
+
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid hsl(266, 83%, 14%);
+    border-radius: 6px;
+    background-color: #fffdf0;
+    font-size: 15px;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 2px solid hsl(59, 86%, 49%);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .button {
+    font-size: 16px;
+    width: fit-content;
+}
+
+
+.contact-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 50px 0;
+}
+
+.gallery-image {
+    flex: 1;
+    height: 230px;
+    overflow: hidden;
+    border-radius: 18px;
+    border: 3px solid hsl(59, 86%, 49%);
+    box-shadow: 8px 8px 0px hsl(266, 83%, 14%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:nth-child(2) {
+    transform: translateY(-20px);
+}
+
+.gallery-image:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+.gallery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.contact-footer {
+    text-align: center;
+    padding: 25px 0;
+    color: hsl(266, 83%, 14%);
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+
+    .contact-heading h1 {
+        font-size: 34px;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-gallery {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .gallery-image {
+        width: 100%;
+        height: 220px;
+    }
+
+    .gallery-image:nth-child(2) {
+        transform: none;
+    }
+}
+
